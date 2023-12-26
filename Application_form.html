@@ -1,3 +1,7 @@
+
+     <!--To create a form use lable tag-->
+     <!--To select as a options use select tag and inside that use option tag-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,20 +12,40 @@
 <h1>Application form</h1>
 <body>
    <form>
-<label>Name:</label><input type="text" placeholder="Enter the Name"><br>
+
+      <!-- Placeholder:To show the word inside the box like a shadow which we given in placeholder or value:To show the word inside the box like a letters ....delete the word which is given in value and give youe details -->
+
+<label>Name:</label><input type="text" placeholder="Enter the Name"><br>    
+
+      <!--To give date month year in form use "DATE" in type attribute-->
+
 <label>DOB:</label><input type="date"><br>
 <label>Age:</label><input type="text" placeholder="Enter the Age"><br>
 <label>College Name:</label><input type="text"><br>
 <label>Programme:</label><input type="text" placeholder="Enter the Degree"><br>
+
+     <!-- select tag is to select the option so,(give option tag inside the select tag) -->
+
+     <!--inside the option tag had given the value attribute ;we given the two times the same, one is for value and another one is to view on the given page -->
+
 <label>year:</label>
-<select name="degree">
+<select name="Year">
 <option value="1<sup>st</sup>">1<sup>st</sup></option>
 <option value="2<sup>nd</sup>">2<sup>nd</sup></option>
 </select><br>
+
+      <!-- To select option in (type: use radio ) in this must give name attribute to choose any one -->
+
 <label>Gender:</label><input type="radio" name="Gender"value="Male">Male
 <input type="radio"name="Gender" value="Female">Female <br>
 <Label>Email:</Label><input type="text"><br>
+
+     <!--In type use password to hide the passwod; it shows as dots while we enter the password -->
+
 <label>Password:</label><input type="password"><br>
+
+     <!-- Add multiple attribute inside the select tag to choose many options -->
+
 <label>Languages known:</label> 
 <select name="lang" multiple>
 <option name="lang" value="Tamil">Tamil</option>
@@ -31,6 +55,9 @@
 <option name="lang" value="Sanskrit">Sanskrit</option>
 </select><br>
 </form>
+
+<!-- textarea tag is to give field back -->
+
 <label>Comments:</label><textarea></textarea><br>
 <input type="submit" value="submit">
 </body>
